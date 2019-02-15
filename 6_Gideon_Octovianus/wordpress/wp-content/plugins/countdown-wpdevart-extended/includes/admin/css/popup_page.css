@@ -1,0 +1,479 @@
+/*##################### Heading #####################*/
+/*##################### Heading #####################*/
+/*##################### Heading #####################*/
+.upgrate_pro_link{
+	text-decoration: none;
+	position: relative;
+	bottom:3px;
+}
+.pro_feature{
+	font-size: 15px; 
+    font-weight: bold;
+    color: rgba(10, 154, 62, 1);
+    margin-left: 2px;
+}
+.countdown_title h1{
+	font-family: serif;
+	/*color: #3AA3D4;*/
+}
+.pro_feature{
+	font-size: 15px; 
+    font-weight: bold;
+    color: rgba(10, 154, 62, 1);
+    margin-left: 2px;
+}
+/*ENABLE RADIO*/
+.display_none{display:none;}
+.cb-enable, .cb-disable, .cb-enable span, .cb-disable span { background: url(../images/switch.gif) repeat-x; display: block; float: left; }
+.cb-enable span, .cb-disable span { line-height: 30px; display: block; background-repeat: no-repeat; font-weight: bold; }
+.cb-enable span { background-position: left -90px; padding: 0 10px; }
+.cb-disable span { background-position: right -180px;padding: 0 10px; }
+.cb-disable.selected { background-position: 0 -30px; }
+.cb-disable.selected span { background-position: right -210px; color: #fff; }
+.cb-enable.selected { background-position: 0 -60px; }
+.cb-enable.selected span { background-position: left -150px; color: #fff; }
+.switch label { cursor: pointer; }
+.switch input { display: none; }
+/*table hading name*/
+.params_subtitle{
+	padding:0px;
+	margin: 0px;
+	display: inline-block;
+}
+.wp-table.right_margin{
+	margin-right:20px;
+}
+/*save all parametr button*/
+.save_all_paramss{
+  width: 160px;
+  display: inline-block;
+  float: right;
+}
+/*###################admin cuztomization grouped parametrs##############################*/
+/*###################admin cuztomization grouped parametrs##############################*/
+/*###################admin cuztomization grouped parametrs##############################*/
+
+.main_parametrs_group_div{
+	float:left;
+	background-color:#fafafa;
+	display:inline-block;
+	width:100%;
+	box-sizing: border-box;
+	position: relative;
+	min-width: 430px;
+	border: 1px solid #e5e5e5;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.04);
+	box-shadow: 0 1px 1px rgba(0,0,0,.04);	
+	margin-bottom: 20px;
+	padding: 0;
+	line-height: 1;
+}
+.left_sections{
+	width:49%;
+	margin-right:1%;
+	float:left;
+}
+.right_sections{
+	width:50%;
+	float:left;
+}
+@media screen and (max-width: 1156px){
+	.left_sections{
+		width:100%;
+	}
+	.right_sections{
+		width:100%;
+	}
+}
+.main_parametrs_group_div:hover{
+	border: 1px solid #D5D5D5;
+}
+
+.head_panel_div{
+	cursor:pointer;
+	border-bottom:1px solid #e5e5e5;
+}
+.main_parametrs_group_div.closed_params .head_panel_div{
+	border-bottom:0px;
+}
+.title_parametrs_group{
+	display: inline-block;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	font-weight:bold;
+	font-size: 15px;
+	padding: 8px 12px;
+	margin: 0;
+	line-height: 1.4;
+}
+.open_or_closed{
+	float:right;
+	height:20px;
+	right: 10px;
+	color: #aaa;
+	font: 400 20px/1 dashicons;
+	speak: none;
+	display: inline-block;
+	top: 8px;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-decoration: none!important;
+}
+.head_panel_div:hover .open_or_closed{
+	color:#777
+}
+.open_or_closed:before{
+	content: '\f142';
+	
+}
+.main_parametrs_group_div.closed_params .open_or_closed:before{
+	content: '\f140';
+}
+.main_parametrs_group_div.closed_params .inside_information_div{
+	display:none;
+}
+.section_parametrs_table{
+	border:0px !important;
+}
+
+.section_parametrs_table > tbody > tr td{
+	vertical-align:middle !important;	
+}
+.section_parametrs_table > tbody > tr>td:nth-child(1){
+	width:43%;
+}
+.desription_class{
+	float: right;
+	cursor: default;
+	color: #0074a2;
+	font-size: 18px;
+	font-weight: bold;
+	border: 1px solid #000000;
+	border-radius: 200px;
+	height: 20px;
+	padding-left: 6px;
+	padding-right: 6px;
+	margin-left: 15px;
+}
+/*##################### Options tr td styling Panel #####################*/
+/*##################### Options tr td styling Panel #####################*/
+/*##################### Options tr td styling Panel #####################*/
+.td_option_description{
+	position: relative;	
+}
+.td_option_description .wpdevart-title{
+	margin-left: 5px;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+.tr_option{
+	height: 37px;
+}
+.tr_option:hover{ 
+	background-color:#e6e6e6;
+}
+.tr_option td{
+	border-bottom:1px solid #dcdcdc;
+}
+/*for margin and padding optins*/
+.tr_option.tr_pading_margin input {
+    max-width: 50px;
+}
+.tr_option.tr_pading_margin label{
+	position: relative;
+    bottom: 4px;
+}
+/*##################### color picker styles #####################*/
+/*##################### color picker styles #####################*/
+/*##################### color picker styles #####################*/
+.wpda_color-picker{
+	position: relative;
+	height: 30px;
+}
+.wpda_color-picker .wp-picker-container{
+	position: absolute;
+	top:10px;
+}
+.wpda_color-picker .wp-picker-container.wp-picker-active{
+	z-index: 9;
+}
+
+/*##################### range input styling #####################*/
+/*##################### range input styling #####################*/
+/*##################### range input styling #####################*/
+.range_option_td output,.range_option_td small{
+	position: relative;
+	bottom: 2px;
+}
+input[type=range] {
+    /*removes default webkit styles*/
+    -webkit-appearance: none;
+    
+    /*fix for FF unable to apply focus style bug */
+    border: 1px solid white;
+    
+    /*required for proper track sizing in FF*/
+    width: 145px;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: goldenrod;
+    margin-top: -5px;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+input[type=range]::-moz-range-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: goldenrod;
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring{
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+input[type=range]::-ms-track {
+    width: 300px;
+    height: 5px;
+    
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;
+    
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 6px 0;
+
+    /*remove default tick marks*/
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: #777;
+    border-radius: 10px;
+}
+input[type=range]::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 10px;
+}
+input[type=range]::-ms-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: goldenrod;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: #888;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: #ccc;
+}
+
+/*######################################### Params help ###################################*/
+/*######################################### Params help ###################################*/
+/*######################################### Params help ###################################*/
+
+.wpdevart-info-container{
+display: inline-block;
+    position: absolute;
+	z-index: 4;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #989898;
+    border-radius: 100%;
+    right: 20px;
+    text-align: center;
+    line-height: 1;
+    box-shadow: 0 0 7px rgba(167, 167, 167, 0.62) inset;
+	cursor:pointer;
+	font-weight: bold;
+	color: #444;
+}
+
+.wpdevart-info-container .wpdevart-info{
+    position: absolute;
+    display: none;
+  	left: 30px;
+    top: -7px;
+    background-color: #292D31;
+    padding: 7px;
+    z-index: 1;
+    min-width: 200px;
+    color: #C5D3D6;
+    box-shadow: 0 0 2px #000;
+    text-align: left;
+    line-height: 1.3;
+    font-size: 14px;
+	font-weight: normal;
+    font-style: italic;
+}
+.wpdevart-info-container:hover .wpdevart-info{
+    display: block;
+}
+
+/*Remove elements*/
+.remove_element{
+	background-image:url(../images/remove_element.png);
+	background-size:contain;
+	width: 21px;
+	height: 21px;
+	display: inline-block;
+	position: relative;
+	top: 4px;
+	margin-left: 7px;
+	cursor: pointer;
+}
+
+/*SAVING PARAMETRS*/
+button{
+	webkit-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+	-moz-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+	-ms-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+	-o-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+	transition:0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+ }
+ .save_section_parametrs{
+	width: 100px;
+	text-align: left;
+	overflow:hidden;
+}
+.save_section_parametrs.padding_loading{
+	width: 130px !important;
+}
+ .save_all_section_parametrs{
+	width: 130px;
+	text-align: left;
+	overflow:hidden;
+}
+.save_all_section_parametrs.padding_loading{
+	width: 150px !important;
+}
+ .save_section_parametrs{
+	width: 100px;
+	text-align: left;
+	overflow:hidden;
+}
+.save_section_parametrs.padding_loading{
+	width: 130px !important;
+}
+.saving_in_progress{
+	position: relative;
+	display:none;
+	width: 20px;
+	height: 20px;
+	margin-left: 12px;
+	top: 4px;
+	background-image: url(../images/loading.gif);
+	background-size:100% 100%;
+ }
+.save_button_span{
+	 float:left;
+}
+ .sucsses_save{
+	position: relative;
+	display:none;
+	width: 20px;
+	height: 20px;
+	margin-left: 12px;
+	top: 4px;
+	background-image: url(../images/success.png);
+	background-size:100% 100%;
+}
+.error_in_saving{
+	position: relative;
+	display:none;
+	width: 20px;
+	height: 20px;
+	margin-left: 12px;
+	top: 4px;
+	background-image: url(../images/remove_element.png);
+	background-size:100% 100%;
+}
+.error_massage{
+	color: #BB1E1E;
+	font-size: 18px;
+	font-weight: bold;
+	padding-left: 21px;
+}
+/* remove upload image*/
+.remove_upload_image{
+	width:27px;
+	line-height:27px;
+	cursor:pointer;
+}
+
+/*##################### sortable #####################*/
+/*##################### sortable #####################*/
+/*##################### sortable #####################*/
+.wpdevart_sortable{
+	max-width: 200px;
+}
+.wpdevart_sortable li{
+	padding-left: 3px;
+	cursor:move;
+	font-weight: bold;
+    color: #1c94c4;
+}
+.wpdevart_sortable .ui-state-highlight{
+	height:19px;
+}
+.wpdevart_sortable span{
+	float:right
+}
+.wpdevart_sortable  .control_deactive  {
+	background:none;
+	background-color:#000000 !important;
+}
+.wpdevart_sortable   .control_active{
+	background:none;
+	background-color:#FFFFFF !important;
+}
+/*##################### Upload #####################*/
+/*##################### Upload #####################*/
+/*##################### Upload #####################*/
+.cont_button_uploaded_img{
+	position: absolute;
+    margin-left: 10px;
+    max-height: 30px;
+    max-width: 30px;
+}
+.wp_support {
+    display: inline-block;
+    float: right;
+    background: #fff url(http://localhost/wordpress12/wp-content/plugins/widget-countdown/images/support.png) no-repeat 7px center;
+    padding: 8px 20px 9px 45px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 2px;
+    border: 1px solid #d4d4d4;
+    margin-right: 20px;
+}

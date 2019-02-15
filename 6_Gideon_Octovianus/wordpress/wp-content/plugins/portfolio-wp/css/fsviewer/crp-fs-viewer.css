@@ -1,0 +1,58 @@
+.malihu * {outline:none;}
+.malihu #toolbar{position:fixed; z-index:3; right:10px; top:10px; padding:5px; background:url(images/fs_img_g_bg.png);}
+.malihu #toolbar img{border:none;}
+.malihu #img_title{display: none; position:fixed; z-index:3; left:10px; top:10px; padding:10px; background:url(images/fs_img_g_bg.png); color:#FFF; font-size:24px; text-transform:uppercase;}
+.malihu #bg{position:fixed; z-index:1; overflow:hidden; width:100%; height:100%; background-color: #000000}
+.malihu #bgimg{display:none; -ms-interpolation-mode: bicubic;}
+.malihu #preloader{position:fixed; z-index:9999999; top:200px; left: 49%; margin:auto; background-color: rgba(0,0,0,0.4); width: 70px; height: 70px;}
+.malihu #preloader i{margin-left: 17px; margin-top: 17px; color: #d3d3d3; font-size: 40px;}
+.malihu #thumbnails_wrapper{z-index:2; position:fixed; bottom:0; width:100%; background:url(images/empty.gif); /* stupid ie needs a background value to understand hover area */}
+.malihu #outer_container {position:relative; padding:0; width:100%; margin:40px auto;}
+.malihu #outer_container .thumbScroller{position:relative; overflow:hidden; background:url(images/fs_img_g_bg.png);}
+.malihu #outer_container .thumbScroller, .malihu #outer_container .thumbScroller .container, .malihu #outer_container .thumbScroller .content{height:170px;}
+.malihu #outer_container .thumbScroller .container{position:relative; left:0; min-width: 100%}
+.malihu #outer_container .thumbScroller .content{float:left; margin-top: 5px;}
+.malihu #outer_container .thumbScroller .content div{margin:5px; height:100%;}
+.malihu #outer_container .thumbScroller img{border:1px solid #fff; max-height: 139px; min-height: 139px; }
+.malihu #outer_container .thumbScroller .content div a{display:block; padding:5px;}
+
+.malihu .nextImageBtn, .malihu .prevImageBtn{display:block; position:absolute; width:50px; height:50px; top:50%; margin:-25px 10px 0 10px; z-index:3; filter:alpha(opacity=40); -moz-opacity:0.4; -khtml-opacity:0.4; opacity:0.4;}
+.malihu .nextImageBtn:hover, .malihu .prevImageBtn:hover{filter:alpha(opacity=80); -moz-opacity:0.8; -khtml-opacity:0.8; opacity:0.8;}
+.malihu .nextImageBtn{right:0; background:#000 url(images/nextImgBtn.png) center center no-repeat;}
+.malihu .prevImageBtn{background:#000 url(images/prevImgBtn.png) center center no-repeat;}
+
+.malihu .viewModeBtn {display: block; width: 50px; height: 50px;}
+.malihu #toolbar .maximize {background-image: url(images/toolbar_n_icon.png); background-repeat: no-repeat; background-size: cover;}
+.malihu #toolbar .minimize {background-image: url(images/toolbar_fs_icon.png); background-repeat: no-repeat; background-size: cover;}
+
+.malihu .closeBtn {display: block; width: 50px; height: 50px; background-image: url(../../images/general/icons/close-icon-2.png); background-repeat: no-repeat; background-size: cover;}
+
+.malihu #details{position:fixed; z-index:3; left:10px; top:10px; padding:10px; margin-right: 70px; min-width: 300px; max-width: 400px; background:url(images/fs_img_g_bg.png); color:#FFF; font-size:16px;}
+.malihu h4 {text-transform:uppercase; margin: 0px; font-weight: 100; font-size: 16px; line-height: normal; max-height: 40px; overflow: hidden; }
+.malihu p {margin-top: 7px; font-weight: 100; font-size: 12px; line-height: normal; max-height: 100px; overflow: auto; -webkit-overflow-scrolling: touch;}
+
+.malihu #read_more_wrapper { margin-top: 13px; margin-bottom: 10px; text-align: left}
+.malihu #read_more_wrapper #read_more {
+    padding: 5px 8px;
+    /*background: #4479BA;*/
+    color: #FFF;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    border: solid 1px white;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    text-decoration: none;
+}
+.malihu #read_more_wrapper #read_more:hover {
+    /*background: #356094;*/
+    border: solid 1px #a9a9a9;
+}
+
+

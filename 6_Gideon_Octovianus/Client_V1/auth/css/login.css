@@ -1,0 +1,58 @@
+.btn {
+	top:50%;
+	border:#b9a3a3;
+	margin-left:10px;
+	border-radius:5px;
+}
+
+.box{
+	margin-top:3%;
+	border-radius:5px;
+}
+
+.outter{
+	padding:20px;
+	background: #998585;
+	position:relative;
+	border-radius:57px;
+	width:50px;
+	height:50px;
+	right:-730px;
+	bottom:-32px;
+}
+
+.logo{
+	position:absolute;
+	font-size:35px;
+	background: #998585;
+	color:#FFFFFF;
+	padding: 10px 18px;
+	top:16%;
+	border-radius:40px;
+	left:40%;
+}
+
+.text{
+	margin-top:13%;
+	margin-left:165px;
+}
+
+.inner{
+	background:#dcf4f9;
+}
+
+.h3{
+	font-size:20px;
+	margin-bottom:20px;
+}
+
+.forget{
+	margin-top:20px;
+	color:#ADADAD;
+}
+
+.log{
+	font-size:26px;
+	border:black solid;
+	border-radius:10px
+}

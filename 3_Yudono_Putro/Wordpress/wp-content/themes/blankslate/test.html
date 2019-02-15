@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+    }
+    *:focus{
+        outline: none;
+    }
+    header{
+        position: fixed;
+        width: 100%;
+        background: #c24382;
+        padding: 10px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .btns{
+        padding: 0 10px;
+        float: right;
+        background: transparent;
+        border: 0;
+    }
+    .btns:hover{
+        background: lightgrey;
+    }
+    aside{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 75%;
+        max-width: 400px;
+        height: 100vh !important;
+        background: white;
+        box-shadow: 0px 0px 12px grey;
+        transform: translateX(100%);
+        transition: 0.5s;
+        z-index: 2;
+        padding: 20px;
+    }
+    .close{
+        float: left;
+    }
+    .lists a{
+        width: 100%;
+        display: table;
+        text-align: center;
+        padding: 10px;
+        font-size: 24px;
+    }
+    #video{
+        width: 100%;
+    }
+    .event-img{
+        background: white;
+        box-shadow: 0px 0px 8px grey;
+        padding: 10px;
+        border-radius: 8px;
+    }
+</style>
+<body>
+
+    <aside>
+        <button class="btn close" onclick="hideaside()"><i class="fa fa-chevron-right"></i></button>
+        <div style="clear:both"></div>
+        <br>
+       <div class="lists">
+            <a href="#home"><i class="fa fa-home"></i> Home</a>
+            <a href="#about"><i class="fa fa-info"></i> About</a>
+            <a href="#contact"><i class="fa fa-phone"></i> Contact</a>
+       </div>
+    </aside>
+
+    <header>
+        Global fashion
+        <button class="btns" onclick="showaside()"><i class="fa fa-bars"></i></button>
+    </header>
+
+    <nav>
+        <video id="video" src="video.mp4" loop mute autoplay></video>
+    </nav>
+
+    <div class="container">
+        <div class="events">
+            <h1>Event</h1>
+            <hr>
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="elle-ss18-trend-report-2a-1508859946.jpg" alt="fashion" class="img-responsive event-img">
+                    <h3>Event Fashion show 2017</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quae saepe numquam unde at amet minima, impedit, explicabo ducimus ullam, voluptate modi in quam repellat obcaecati velit reprehenderit distinctio exercitationem!</p>
+                </div>
+                <div class="col-lg-4">
+                        <img src="elle-ss18-trend-report-2a-1508859946.jpg" alt="fashion" class="img-responsive event-img">
+                        <h3>Event Fashion show 2017</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quae saepe numquam unde at amet minima, impedit, explicabo ducimus ullam, voluptate modi in quam repellat obcaecati velit reprehenderit distinctio exercitationem!</p>
+                    </div>
+                    <div class="col-lg-4">
+                            <img src="elle-ss18-trend-report-2a-1508859946.jpg" alt="fashion" class="img-responsive event-img">
+                            <h3>Event Fashion show 2017</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quae saepe numquam unde at amet minima, impedit, explicabo ducimus ullam, voluptate modi in quam repellat obcaecati velit reprehenderit distinctio exercitationem!</p>
+                        </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        function showaside(){
+            $('aside').css({
+                transition: '0.5s',
+                transform: 'translateX(0%)'
+            });
+        }
+        function hideaside(){
+            $('aside').css({
+                transition: '0.5s',
+                transform: 'translateX(100%)'
+            });
+        }
+    </script>
+</body>
+</html>

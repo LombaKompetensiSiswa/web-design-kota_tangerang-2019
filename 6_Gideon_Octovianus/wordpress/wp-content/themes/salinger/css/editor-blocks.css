@@ -1,0 +1,178 @@
+/*
+Theme Name: Salinger
+Description: Used to style Gutenberg Blocks in the editor.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 24px 0;
+	line-height: 2.4;
+	font-weight: normal;
+	line-height: 1.5;
+}
+h1 {
+	font-size: 35px;
+}
+h2 {
+	font-size: 32px;
+}
+h3 {
+	font-size: 24px;
+}
+h4 {
+	font-size: 22px;
+}
+h5 {
+	font-size: 20px;
+}
+h6 {
+	font-size: 18px;
+}
+p.has-text-color a {
+	text-decoration: underline;
+}
+
+p.has-drop-cap {
+   overflow: hidden;
+}
+.editor-styles-wrapper img {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+.editor-styles-wrapper {
+	max-width: 100% !important; /* Override where editor-style.css is affecting this */
+}
+
+/* Main column width */
+.wp-block {
+    max-width: 850px;
+}
+
+/* Width of "wide" blocks */
+.wp-block[data-align="wide"] {
+    max-width: 850px;
+}
+
+/* Width of "full-wide" blocks */
+.wp-block[data-align="full"] {
+    max-width: 878px;
+    margin: 0 auto !important;
+}
+.editor-block-list__layout .editor-block-list__block[data-align="full"] > .editor-block-list__block-edit::before {
+    right: -14px;
+    left: -14px;
+    top: -14px;
+    bottom: -14px;
+}
+.editor-post-title {
+    padding: 0;
+}
+.wp-block-spacer {
+    clear: both;
+    margin: 0;
+}
+
+/* =================== Buttons =================== */
+
+.wp-block-button {
+	line-height: 1.25;
+	text-align: center;
+}
+.wp-block-button.alignleft {
+	margin-right: 14px;
+}
+.wp-block-button.alignright {
+	margin-left: 14px;
+}
+.wp-block-button__link:hover{
+	opacity:.8;
+}
+.wp-block-button {
+	font-weight: bold;
+}
+
+/* Media & Text */
+
+.wp-block-media-text *:last-child {
+	margin-bottom: 0;
+}
+.wp-block-media-text.alignfull > figure > img {
+    margin-left: -28px;
+}
+
+ul.wp-block-latest-posts {
+    line-height: 1.7;
+}
+/* ============= Blockquote ================== */
+
+blockquote.wp-block-quote,
+blockquote.wp-block-quote.is-style-large {
+   background:rgba(128, 128, 128, 0.1);
+   border-width: 0;
+   border-left: 4px solid rgba(128, 128, 128, 0.4) !important;
+   width: 90%;
+   margin:	28px auto;
+   overflow: auto;
+   padding: 14px 28px;
+}
+
+.wp-block-quote p {
+   font-style:	italic;
+   font-size: 1em;
+   margin: 0;
+}
+.wp-block-quote cite,
+.wp-block-quote__citation {
+    border-width: 0;
+	color: inherit;
+	display: block;
+	font-style: normal;
+	font-weight: bold;
+	margin-left: 3em;
+	margin-top: .5em;
+}
+.wp-block-table {
+	font-size: 14px;
+	line-height: 2;
+	margin: 0 0 24px;
+	margin: 0 0 2.4rem;
+	width: 100%;
+}
+.editor-styles-wrapper td {
+    border: 1px solid #ededed;
+}
+
+/* ================= Custom styles ====================== */
+
+/* Icons */
+.email-icon:before,
+.address-icon:before,
+.phone-icon:before {
+    font-family: 'Dashicons';
+    content: "\f465";
+    font-size: 18px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.email-icon:before {
+    content: "\f465";
+}
+.phone-icon:before {
+    content: "\f525";
+}
+.address-icon:before {
+    content: "\f231";
+}
+
+/* Covers */
+.wp-block-cover.cover-250 {
+	min-height: 250px;
+}
+.wp-block-cover.cover-300 {
+	min-height: 300px;
+}
